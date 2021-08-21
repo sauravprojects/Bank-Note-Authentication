@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="background-color:Silver;padding:10px">
+    <h2 style="color:black;text-align:center;">Bank Note Classifier</h2>
+    </div>
+	
+	<div style="color:purple">
+	<form action = "{{ url_for('predict')}}" method ="POST" >
+		<h3>Enter the value for variance : </h3><input id="second" name="Variance" required="required">
+		<h3>Enter the value for skewness : </h3><input id = "third" name = "skewness" required = "required">
+		<h3>Enter the value for curtosis : </h3><input id = "fourth" name = "curtosis" required = "required">
+		<h3>Enter the value for entropy : </h3><input id = "fifth" name = "entropy" required = "required"><br></br>
+		
+		<input type="Submit" class="btn-info" value="Predict">
+		
+	</form>
+	</div>
+</body>
+</html>
